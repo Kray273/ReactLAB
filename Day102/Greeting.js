@@ -20,14 +20,18 @@ function Greeting() {
   //return result;
   
   //조건 삼항 연산자
-  let insa1 = "오늘도 즐거운 하루 되세요";
+  let insa1 = "오늘도 즐거운 하루 되세요"; //문자열
   let insa2 = "안녕하세요 리액트";
   let insa3 = "오늘날씨 어때요";
+  let style2 = {color:"pink", textAlign : "center"};//객체 
+
   //JSX 조건 삼항 연산자
   return (
-      index == 0 ? <h1>{index}{insa1}</h1> : 
-      index == 1 ? <h1>{index}{insa2}</h1> : <h1>{index}{insa3}</h1>
+      index == 0 ? <h1 style={{color:'red', border:"2px solid green"}}>{index}{insa1}</h1> : 
+      index == 1 ? <h1 style={style2} >{index}{insa2}</h1> : <h1>{index}{insa3}</h1>
   );
 
 }
 export default Greeting;
+
+//var emp1 = {color:'red', border:"2px solid green"}
