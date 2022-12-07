@@ -1,3 +1,4 @@
+//교수님 Sol
 import React from "react";
 class Loop extends React.Component{
     render(){
